@@ -34,3 +34,21 @@
 .col-md-3 .col-sm-6 .mb-4 {
 	border: grey;	
 }
+
+.btow {
+  transition:
+  background 3s .5s;
+}
+
+.playing .btow {
+  background:  #d5d5d5 ;
+}
+
+body { background: black;
+  transition: 
+    background 2s .5s,
+    transform 2s .25s;
+  background: black;
+  transition-timing-function: ease-in;
+  
+}
