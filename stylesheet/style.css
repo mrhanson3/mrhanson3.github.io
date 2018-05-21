@@ -1,0 +1,30 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family:Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+.slicknav_menu {
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 1040em) {
+	.js #menu {
+		display:none;
+		float: left;
+	}
+	
+	.js .slicknav_menu {
+		display: inline-block;
+		padding: 3px 10px 1px;
+	}
+}

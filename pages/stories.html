@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+
+<title>Clayton Hanson</title>
+
+<link rel="stylesheet" href="stylesheet/style.css"> <!--SlickNav stylesheet -->
+<link rel="stylesheet" href="stylesheet/slicknav.css"> <!--SlickNav stylesheet -->
+<link rel="stylesheet" href="stylesheet/main.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+
+<ul id="menu">
+    <li>My Portfolio
+        <ul>
+            <li><a href="#">item 3</a></li>
+            <li>Parent 3
+                <ul>
+                    <li><a href="#">item 8</a></li>
+                    <li><a href="#">item 9</a></li>
+                    <li><a href="#">item 10</a></li>
+                </ul>
+            </li>
+            <li><a href="#">item 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">What's The Third Laboratory</a></li>
+    <li>Some Graphs Using D3.js</li>
+    <li>Some Stories I Wrote
+        <ul>
+            <li><a href="#">item 5</a></li>
+            <li><a href="#">item 6</a></li>
+            <li><a href="#">item 7</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>

@@ -1,1 +1,32 @@
-hello world
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+
+<title>Clayton Hanson</title>
+
+<link rel="stylesheet" href="stylesheet/style.css"> <!--SlickNav stylesheet -->
+<link rel="stylesheet" href="stylesheet/slicknav.css"> <!--SlickNav stylesheet -->
+<link rel="stylesheet" href="stylesheet/front.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+</head>
+<body>
+<nav>
+<ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/portfolio.html">My Portfolio</a></li>
+    <!-- <li><a href="pages/whats3rd.html">What's The Third Laboratory</a></li>
+    <li><a href="pages/graphs.html">Some Graphs Using D3.js</a></li>
+    <li><a href="pages/stories.html">Some Stories I Wrote</a></li> -->
+</ul>
+</nav>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>
