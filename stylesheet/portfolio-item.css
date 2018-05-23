@@ -37,7 +37,7 @@
 
 .btow {
   transition:
-  background 3s .5s;
+  background 4s .5s;
 }
 
 .playing .btow {
@@ -46,8 +46,8 @@
 
 body { background: black;
   transition: 
-    background 2s .5s,
-    transform 2s .25s;
+    background 4s .5s,
+    transform 4s .25s;
   background: black;
   transition-timing-function: ease-in;
   
