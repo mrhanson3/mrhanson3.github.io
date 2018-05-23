@@ -35,7 +35,7 @@
 	border: grey;	
 }
 
-/*.btow {
+.btow {
   transition:
   background 3s .5s;
 }
@@ -51,4 +51,4 @@ body { background: black;
   background: black;
   transition-timing-function: ease-in;
   
-}*/
+}
