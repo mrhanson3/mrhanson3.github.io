@@ -16,7 +16,6 @@ h1 {
 	display: inline-block;
 }
 
-
 @media screen and (max-width: 1040em) {
 	.js #menu {
 		display:none;
