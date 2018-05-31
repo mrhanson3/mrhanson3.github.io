@@ -37,17 +37,19 @@
 
 .btow {
   transition:
-  background 4s .5s;
+  background 5s .75s;
 }
 
 .playing .btow {
   background:  #eaeaea;
 }
 
-body { background: white;
+body { 
   transition: 
     background 2s .5s,
     transform 2s .25s;
   transition-timing-function: ease-in;
   
 }
+
+
