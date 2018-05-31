@@ -44,11 +44,10 @@
   background:  #eaeaea;
 }
 
-body { background: black;
+body { background: white;
   transition: 
-    background 4s 1s,
-    transform 4s 1s;
-  background: black;
+    background 2s .5s,
+    transform 2s .25s;
   transition-timing-function: ease-in;
   
 }
