@@ -1,7 +1,0 @@
-body { background: white;
-  transition: 
-    background 2s .5s,
-    transform 2s .25s;
-  transition-timing-function: ease-in;
-  
-}
