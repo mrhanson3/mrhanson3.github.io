@@ -1,37 +1,7 @@
-/* 
-================================
-A sample transition */
-
-
-.ball {
-  transition: 
-    background 2s .5s,
-    transform 2s .25s;
-    
-}
-
-.playing .ball {
-  transform: translateX(450px);
-  background: red;
-  transition-timing-function: ease-in;
-}
-
-
-
-.ball {
-  background: #0097C0;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 180px;
-  width: 100px; height: 100px;
-}
-
 body { background: white;
   transition: 
     background 2s .5s,
     transform 2s .25s;
-  background: red;
   transition-timing-function: ease-in;
   
 }
