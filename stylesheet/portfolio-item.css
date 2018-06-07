@@ -1,3 +1,13 @@
+body {
+  
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  font-size:100%;
+  background-color: black;
+  font-family:Helvetica, Arial, sans-serif;
+}
+
 
 .overlay {
   position: absolute;
