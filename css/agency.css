@@ -147,7 +147,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -162,17 +162,19 @@ img::-moz-selection {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #212529;
+
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
+    opacity: 0.5;
   }
 }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/bear.jpg");
+  background-image: url("../img/dock.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
