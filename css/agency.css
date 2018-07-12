@@ -21,7 +21,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #7f0000 !important;
 }
 
 h1,
@@ -70,13 +70,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #7f0000;
+  border-color: #7f0000;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #7f0000 !important;
+  border-color: #7f0000 !important;
   color: white;
 }
 
@@ -85,12 +85,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #7f0000;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #7f0000;
   text-shadow: none;
 }
 
@@ -301,6 +301,10 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio * {
   z-index: 2;
+}
+
+#portfolio {
+  background-color: blue;
 }
 
 @media (min-width: 767px) {
