@@ -47,15 +47,76 @@
       </div>
     </nav>
 
-  <body id="page-top">
-    <main class="main pt-4" role="main">
+  
+  <header role="banner">
+    <nav class="navbar navbar-expand-md navbar-light bg-white absolute-top">
+      <div class="container">
+
+        <button class="navbar-toggler order-2 order-md-1" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3 order-md-2" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown02">
+                <a class="dropdown-item" href="home-onecolumn.html">One column</a>
+                <a class="dropdown-item" href="home-twocolumn.html">Two column</a>
+                <a class="dropdown-item" href="home-threecolumn.html">Three column</a>
+                <a class="dropdown-item" href="home-fourcolumn.html">Four column</a>
+                <a class="dropdown-item" href="home-featured.html">Featured posts</a>
+                <a class="dropdown-item" href="home-fullwidth.html">Full width</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown02">
+                <a class="dropdown-item" href="post-image.html">Image</a>
+                <a class="dropdown-item" href="post-video.html">Video</a>
+                <a class="dropdown-item" href="post-new.html">New story</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <a class="dropdown-item" href="doc-typography.html">Typography</a>
+                <a class="dropdown-item" href="doc-buttons.html">Buttons</a>
+                <a class="dropdown-item" href="doc-tables.html">Tables</a>
+                <a class="dropdown-item" href="doc-forms.html">Forms</a>
+                <a class="dropdown-item" href="doc-cards.html">Cards</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto order-1 order-md-3" href="index.html">Milø</a>
+
+        <div class="collapse navbar-collapse order-4 order-md-4" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page-about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline" role="search">
+            <input class="search js-search form-control form-control-rounded mr-sm-2" type="text" title="Enter search query here.." placeholder="Search.." aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main pt-4" role="main">
 
     <div class="intro">
       <div class="container-fluid">
         <div class="row">
 
           <div class="col-md-4">
-            <a class="intro-block" href="post-image.html" style="background-image:url('img/11.jpg')">
+            <a class="intro-block" href="post-image.html" src="img/22.jpg"">
               <div class="intro-block-inner">
                 <time class="timeago" datetime="2017-10-26 20:00">26 october 2017</time>
                 <h2>Sing about love</h2>
@@ -223,24 +284,33 @@
 
   
 
-  
-   
+ 
+  <footer class="site-footer bg-darkest" role="contentinfo">
+    <div class="container">
 
-
-
-
-
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Clayton Hanson 2018</span>
-          </div>
-        </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Terms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Advertise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page-contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="copy">
+        &copy; Clayton Hanson 2018<br />
+        All rights reserved
       </div>
-    </footer>
+    </div>
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
