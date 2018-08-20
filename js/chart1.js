@@ -30,7 +30,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#ff0000",
         fill: false
       }
-    ]
+    ]    
   },
     options: {
         scales: {
@@ -39,9 +39,23 @@ var myChart = new Chart(ctx, {
                     beginAtZero:true,
                     max: 50,
                     min: 0,
-                    stepSize: 10                 
+                    stepSize: 10,
+                    callback: function(value, index, values) {
+                        return '$' + value;
+
                 }
+            }
             }]
+        },
+        tooltips: {
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    return "$" + Number(tooltipItem.yLabel).toFixed(2).replace(/./g, function(c, i, a) {
+                        return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+                
+            });
         }
+    }
+    }
       }  
 });
