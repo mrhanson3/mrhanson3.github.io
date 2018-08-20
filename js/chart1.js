@@ -19,6 +19,16 @@ var myChart = new Chart(ctx, {
         label: "Litecoin",
         borderColor: "#3cba9f",
         fill: false
+      }, { 
+        data: [30.75, 30.75, 30.75, 30.75],
+        label: "Total Cost",
+        borderColor: "#000000",
+        fill: false
+      }, { 
+        data: [30.75, 26.18, 26.18, 25.81],
+        label: "Total Value",
+        borderColor: "#ff0000",
+        fill: false
       }
     ]
   },
@@ -27,9 +37,9 @@ var myChart = new Chart(ctx, {
             yAxes: [{
                 ticks: {
                     beginAtZero:true,
-                    max: 30,
+                    max: 50,
                     min: 0,
-                    stepSize: 5                 
+                    stepSize: 10                 
                 }
             }]
         }
