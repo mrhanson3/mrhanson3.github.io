@@ -12,6 +12,10 @@ p {
   line-height: 1.75;
 }
 
+.card-body {
+  padding: .5rem;
+}
+
 a {
   color: #fed136;
 }
