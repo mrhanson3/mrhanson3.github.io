@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
     datasets: [{ 
         data: [10.25, 9.52, 9.47, 9.53],
         label: "Bitcoin",
-        borderColor: "#3e95cd",
+        borderColor: "#0000ff",
         fill: false
       }, { 
         data: [10.25, 7.86, 7.80, 7.69],
@@ -17,17 +17,22 @@ var myChart = new Chart(ctx, {
       }, { 
         data: [10.25, 8.80, 8.91, 8.59],
         label: "Litecoin",
-        borderColor: "#3cba9f",
+        borderColor: "#00ff00",
         fill: false
       }, { 
-        data: [30.75, 30.75, 30.75, 30.75],
+        data: [67.61, 67.61, 67.61, 67.61],
         label: "Total Cost",
         borderColor: "#000000",
         fill: false
       }, { 
-        data: [30.75, 26.18, 26.18, 25.81],
+        data: [67.61, 61.05, 62.06, 63.21],
         label: "Total Value",
         borderColor: "#ff0000",
+        fill: false
+      }, { 
+        data: [36.86, 34.87, 36.42, 37.40],
+        label: "Monero",
+        borderColor: "#ffa500",
         fill: false
       }
     ]    
@@ -37,7 +42,7 @@ var myChart = new Chart(ctx, {
             yAxes: [{
                 ticks: {
                     beginAtZero:true,
-                    max: 50,
+                    max: 100,
                     min: 0,
                     stepSize: 10,
                     callback: function(value, index, values) {
