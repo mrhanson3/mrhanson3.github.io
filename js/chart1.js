@@ -3,34 +3,34 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-    labels: ["Aug-10", "Aug-24"],
+    labels: ["Aug-10", "Aug-24", "Sept-7"],
     datasets: [{ 
-        data: [10.25, 10.22],
+        data: [10.25, 10.22, 16.80],
         label: "Bitcoin",
         borderColor: "#0000ff",
         fill: false
       }, { 
-        data: [10.25, 7.40],
+        data: [10.25, 7.40, 11.64],
         label: "Ethereum",
         borderColor: "#8e5ea2",
         fill: false
       }, { 
-        data: [10.25, 8.81],
+        data: [10.25, 8.81, 15.73],
         label: "Litecoin",
         borderColor: "#00ff00",
         fill: false
       }, { 
-        data: [67.61, 67.61],
+        data: [67.61, 67.61, 91.61],
         label: "Total Cost",
         borderColor: "#000000",
         fill: false
       }, { 
-        data: [67.61, 60.50],
+        data: [67.61, 60.50, 86.98],
         label: "Total Value",
         borderColor: "#ff0000",
         fill: false
       }, { 
-        data: [36.86, 34.07],
+        data: [36.86, 34.07, 42.81],
         label: "Monero",
         borderColor: "#ffa500",
         fill: false
