@@ -8145,7 +8145,7 @@ defaults._set('global', {
 			afterTitle: helpers.noop,
 
 			// Args are: (tooltipItems, data)
-			beforeBody: helpers.noop,
+			beforebody: helpers.noop,
 
 			// Args are: (tooltipItem, data)
 			beforeLabel: helpers.noop,
@@ -8173,7 +8173,7 @@ defaults._set('global', {
 			afterLabel: helpers.noop,
 
 			// Args are: (tooltipItems, data)
-			afterBody: helpers.noop,
+			afterbody: helpers.noop,
 
 			// Args are: (tooltipItems, data)
 			beforeFooter: helpers.noop,
@@ -8241,7 +8241,7 @@ module.exports = function(Chart) {
 			xAlign: tooltipOpts.xAlign,
 			yAlign: tooltipOpts.yAlign,
 
-			// Body
+			// body
 			bodyFontColor: tooltipOpts.bodyFontColor,
 			_bodyFontFamily: valueOrDefault(tooltipOpts.bodyFontFamily, globalDefaults.defaultFontFamily),
 			_bodyFontStyle: valueOrDefault(tooltipOpts.bodyFontStyle, globalDefaults.defaultFontStyle),
@@ -8290,10 +8290,10 @@ module.exports = function(Chart) {
 
 		// Count of all lines in the body
 		var body = model.body;
-		var combinedBodyLength = body.reduce(function(count, bodyItem) {
+		var combinedbodyLength = body.reduce(function(count, bodyItem) {
 			return count + bodyItem.before.length + bodyItem.lines.length + bodyItem.after.length;
 		}, 0);
-		combinedBodyLength += model.beforeBody.length + model.afterBody.length;
+		combinedbodyLength += model.beforebody.length + model.afterbody.length;
 
 		var titleLineCount = model.title.length;
 		var footerLineCount = model.footer.length;
@@ -8304,8 +8304,8 @@ module.exports = function(Chart) {
 		height += titleLineCount * titleFontSize; // Title Lines
 		height += titleLineCount ? (titleLineCount - 1) * model.titleSpacing : 0; // Title Line Spacing
 		height += titleLineCount ? model.titleMarginBottom : 0; // Title's bottom Margin
-		height += combinedBodyLength * bodyFontSize; // Body Lines
-		height += combinedBodyLength ? (combinedBodyLength - 1) * model.bodySpacing : 0; // Body Line Spacing
+		height += combinedbodyLength * bodyFontSize; // body Lines
+		height += combinedbodyLength ? (combinedbodyLength - 1) * model.bodySpacing : 0; // body Line Spacing
 		height += footerLineCount ? model.footerMarginTop : 0; // Footer Margin
 		height += footerLineCount * (footerFontSize); // Footer Lines
 		height += footerLineCount ? (footerLineCount - 1) * model.footerSpacing : 0; // Footer Line Spacing
@@ -8319,11 +8319,11 @@ module.exports = function(Chart) {
 		ctx.font = helpers.fontString(titleFontSize, model._titleFontStyle, model._titleFontFamily);
 		helpers.each(model.title, maxLineWidth);
 
-		// Body width
+		// body width
 		ctx.font = helpers.fontString(bodyFontSize, model._bodyFontStyle, model._bodyFontFamily);
-		helpers.each(model.beforeBody.concat(model.afterBody), maxLineWidth);
+		helpers.each(model.beforebody.concat(model.afterbody), maxLineWidth);
 
-		// Body lines may include some extra width due to the color box
+		// body lines may include some extra width due to the color box
 		widthPadding = model.displayColors ? (bodyFontSize + 2) : 0;
 		helpers.each(body, function(bodyItem) {
 			helpers.each(bodyItem.before, maxLineWidth);
@@ -8500,13 +8500,13 @@ module.exports = function(Chart) {
 		},
 
 		// Args are: (tooltipItem, data)
-		getBeforeBody: function() {
-			var lines = this._options.callbacks.beforeBody.apply(this, arguments);
+		getBeforebody: function() {
+			var lines = this._options.callbacks.beforebody.apply(this, arguments);
 			return helpers.isArray(lines) ? lines : lines !== undefined ? [lines] : [];
 		},
 
 		// Args are: (tooltipItem, data)
-		getBody: function(tooltipItems, data) {
+		getbody: function(tooltipItems, data) {
 			var me = this;
 			var callbacks = me._options.callbacks;
 			var bodyItems = [];
@@ -8528,8 +8528,8 @@ module.exports = function(Chart) {
 		},
 
 		// Args are: (tooltipItem, data)
-		getAfterBody: function() {
-			var lines = this._options.callbacks.afterBody.apply(this, arguments);
+		getAfterbody: function() {
+			var lines = this._options.callbacks.afterbody.apply(this, arguments);
 			return helpers.isArray(lines) ? lines : lines !== undefined ? [lines] : [];
 		},
 
@@ -8619,9 +8619,9 @@ module.exports = function(Chart) {
 
 				// Build the Text Lines
 				model.title = me.getTitle(tooltipItems, data);
-				model.beforeBody = me.getBeforeBody(tooltipItems, data);
-				model.body = me.getBody(tooltipItems, data);
-				model.afterBody = me.getAfterBody(tooltipItems, data);
+				model.beforebody = me.getBeforebody(tooltipItems, data);
+				model.body = me.getbody(tooltipItems, data);
+				model.afterbody = me.getAfterbody(tooltipItems, data);
 				model.footer = me.getFooter(tooltipItems, data);
 
 				// Initial positioning and colors
@@ -8754,7 +8754,7 @@ module.exports = function(Chart) {
 				}
 			}
 		},
-		drawBody: function(pt, vm, ctx, opacity) {
+		drawbody: function(pt, vm, ctx, opacity) {
 			var bodyFontSize = vm.bodyFontSize;
 			var bodySpacing = vm.bodySpacing;
 			var body = vm.body;
@@ -8763,7 +8763,7 @@ module.exports = function(Chart) {
 			ctx.textBaseline = 'top';
 			ctx.font = helpers.fontString(bodyFontSize, vm._bodyFontStyle, vm._bodyFontFamily);
 
-			// Before Body
+			// Before body
 			var xLinePadding = 0;
 			var fillLineOfText = function(line) {
 				ctx.fillText(line, pt.x + xLinePadding, pt.y);
@@ -8772,7 +8772,7 @@ module.exports = function(Chart) {
 
 			// Before body lines
 			ctx.fillStyle = mergeOpacity(vm.bodyFontColor, opacity);
-			helpers.each(vm.beforeBody, fillLineOfText);
+			helpers.each(vm.beforebody, fillLineOfText);
 
 			var drawColorBoxes = vm.displayColors;
 			xLinePadding = drawColorBoxes ? (bodyFontSize + 2) : 0;
@@ -8811,7 +8811,7 @@ module.exports = function(Chart) {
 			xLinePadding = 0;
 
 			// After body lines
-			helpers.each(vm.afterBody, fillLineOfText);
+			helpers.each(vm.afterbody, fillLineOfText);
 			pt.y -= bodySpacing; // Remove last body spacing
 		},
 		drawFooter: function(pt, vm, ctx, opacity) {
@@ -8895,21 +8895,21 @@ module.exports = function(Chart) {
 			var opacity = Math.abs(vm.opacity < 1e-3) ? 0 : vm.opacity;
 
 			// Truthy/falsey value for empty tooltip
-			var hasTooltipContent = vm.title.length || vm.beforeBody.length || vm.body.length || vm.afterBody.length || vm.footer.length;
+			var hasTooltipContent = vm.title.length || vm.beforebody.length || vm.body.length || vm.afterbody.length || vm.footer.length;
 
 			if (this._options.enabled && hasTooltipContent) {
 				// Draw Background
 				this.drawBackground(pt, vm, ctx, tooltipSize, opacity);
 
-				// Draw Title, Body, and Footer
+				// Draw Title, body, and Footer
 				pt.x += vm.xPadding;
 				pt.y += vm.yPadding;
 
 				// Titles
 				this.drawTitle(pt, vm, ctx, opacity);
 
-				// Body
-				this.drawBody(pt, vm, ctx, opacity);
+				// body
+				this.drawbody(pt, vm, ctx, opacity);
 
 				// Footer
 				this.drawFooter(pt, vm, ctx, opacity);
