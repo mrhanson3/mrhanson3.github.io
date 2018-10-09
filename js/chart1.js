@@ -20,7 +20,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#00ff00",
         fill: false
       }, { 
-        data: [67.61, 67.61, 91.61, 109.61],
+        data: [67.61, 67.61, 91.61, 109.61, 133.61],
         label: "Total Cost",
         borderColor: "#000000",
         fill: false
