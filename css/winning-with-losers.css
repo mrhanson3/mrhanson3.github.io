@@ -1,0 +1,136 @@
+/*************************************************************
+  HEADER
+**************************************************************/
+header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  z-index: -1;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/8/89/Home_base_of_baseball_field_in_T%C5%99eb%C3%AD%C4%8D%2C_T%C5%99eb%C3%AD%C4%8D_District.jpg) top center;
+  background-size: cover;
+  -webkit-transform: translateZ(-1px) scale(2.1);
+          transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+
+/*************************************************************
+  SECTIONS
+**************************************************************/
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+}
+
+.section1 {
+  background: #fafafa;
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+}
+
+.section2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url(https://picsum.photos/g/1920/1080?random) top center;
+  background-size: cover;
+  -webkit-transform: translateZ(-.5px) scale(1.6);
+          transform: translateZ(-.5px) scale(1.6);
+  z-index: -1;
+}
+
+/*************************************************************
+  HEADINGS
+**************************************************************/
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  padding: 1rem;
+  background: #fafafa;
+  box-shadow: 0 0 20px #333;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+          transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+
+.section1 h1 {
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+
+.section2 h1 {
+  -webkit-transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+          transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+  z-index: 3;
+}
+
+/*************************************************************
+  BASIC STYLES
+**************************************************************/
+*,
+*::before,
+*::after,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+}
+
+.top {
+  font-size: .9rem;
+  text-align: center;
+  position: absolute;
+  padding: 1.5rem;
+  background: #fafafa;
+  box-shadow: 0 0 20px #333;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+          transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+
+p {
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
