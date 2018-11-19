@@ -35,7 +35,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#ffa500",
         fill: false
       }
-    ]    
+               }]    
   },
     options: {
         scales: {
