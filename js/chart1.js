@@ -15,7 +15,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#8e5ea2",
         fill: false
       }, { 
-        data: [10.25, 8.81, 15.73, 21.23, 27.93, 35.06, 41.52. 42.33],
+        data: [10.25, 8.81, 15.73, 21.23, 27.93, 35.06, 41.52, 42.33],
         label: "Litecoin",
         borderColor: "#00ff00",
         fill: false
@@ -30,7 +30,7 @@ var myChart = new Chart(ctx, {
         borderColor: "#ff0000",
         fill: false
       }, { 
-        data: [36.86, 34.07, 42.81, 43.85, 42.71, 40.83, 39.75. 32.45],
+        data: [36.86, 34.07, 42.81, 43.85, 42.71, 40.83, 39.75, 32.45],
         label: "Monero",
         borderColor: "#ffa500",
         fill: false
