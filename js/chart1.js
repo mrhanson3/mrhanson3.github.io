@@ -3,7 +3,7 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-    labels: ["Aug-10", "Aug-24", "Sept-7", "Sept-21", "Oct-5", "Oct-19", "Nov-2", "Nov-17],
+    labels: ["Aug-10", "Aug-24", "Sept-7", "Sept-21", "Oct-5", "Oct-19", "Nov-2", "Nov-17"],
     datasets: [{ 
         data: [10.25, 10.22, 16.80, 22.17, 29.00, 38.79, 46.14, 51.21],
         label: "Bitcoin",
