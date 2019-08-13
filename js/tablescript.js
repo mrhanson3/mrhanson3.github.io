@@ -16,9 +16,9 @@ const clearInput = document.getElementById('clearInput');
 
 
 const people = [
-{ amount: '$15 to win $5', date: '9/9/19', wager: 'Saints over Texans', notes: 'Seems like a simple bet.' },
 { amount: '$120 to win $70.58', date: '8/11/19', wager: 'Panthers over 7.5 wins', notes: 'Number seems low. There will be plenty of time to hedge if all goes to crap.' },
-{ amount: '$12.36 to win $7.97', date: '9/8/19', wager: 'Rams over Panthers', notes: 'First hedge on Panthers bet. If Panthers win, I will be happy.' }];
+{ amount: '$12.36 to win $7.97', date: '9/8/19', wager: 'Rams over Panthers', notes: 'First hedge on Panthers bet. If Panthers win, I will be happy.' },
+{ amount: '$15 to win $5', date: '9/9/19', wager: 'Saints over Texans', notes: 'Seems like a simple bet.' }];
 
 
 
