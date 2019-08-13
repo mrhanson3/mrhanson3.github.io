@@ -9,6 +9,9 @@
   <title>Clayton Hanson</title>
 
   <link href="../css/milo.css" rel="stylesheet">
+  <link href="../css/tablestyle.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
 </head>
 <body>
 
@@ -51,34 +54,75 @@
           <article class="card mb-4">
             <header class="card-header text-center">
               <div class="card-meta">
-                <a href="#"><time class="timeago" datetime="2018-07-15 20:00">15 July 2018</time>
+                <a href="#"><time class="timeago" datetime="2019-8-13 10:00">13 August 2019</time>
               </div>
               <a href="post-image.html">
-                <h1 class="card-title">Let's make some bread</h1>
+                <h1 class="card-title">Betting on the NFL</h1>
               </a>
             </header>
             <a href="post-image.html">
-              <img class="card-img" src="img/1.JPG" alt="" />
+              <img class="card-img" src="img/arms.jpg" alt="" />
             </a>
             <div class="card-body">
-
-              <p>As a web developer I get a little worn out from working on stuff that only appears on a screen and every so often I want to make something by hand. Clearly, this is banana bread. Maybe that isn't so clear.</p>
-
-              <p>The receipe came from Thug Kitchen: The Official Cookbook: Eat Like You Give a F*ck. It's a pretty amusing book, if you're into seeing the word fuck next to a description of what makes a good vanilla extract. I had to make a few changes because the cookbook is for vegans and I didn't want to buy extra ingredients just for one receipe.</p>
-
               <div class="row">
-                <div class="col-md-8">
-                  
-                    <img class="card-img" src="img/2.JPG" alt="" />
-                  
+                <div class="col-md-3 ml-auto">
+                  <h3>Initial deposit</h3>
+                  <h4>$300</h4>
                 </div>
-                <div class="col-md-4">
-                  
-                    <p>It turned out quite dense and a little dry, but we managed to eat it all because we're soldiers like that. Also, the line between moist and gross is pretty thing with bread, so I would always lean towards dry instead of wet dough.</p>
+                <div class="col-md-3 ml-auto">
+                  <h3>Current value</h3>
+                  <h4>$152.64</h4>
                 </div>
-             
+                <div class="col-md-3 ml-auto">
+                  <h3>Open bets</h3>
+                  <h4>$147.66</h4>
+                  <p>If I were to lose all of my current bets I would lose this amount.</p>
+                </div>
+              </div>
+            </br>
 
+              <p>Every so often I think that I can make money while gambling on the NFL, so now I'm going to see if that's true or if I would have been better off just putting my money into my savings account. I'm going to record all of my bets here and you can follow along to see how things go.</p>
+
+              <p>I do realize that there are a lot of major corporations who make a ton of money on people betting on the NFL. I'm sure they use huge databases and measure a ton of variables that I don't know about, so that should be interesting.</p>
+
+              <div class="container">
+  <div class="row">
+    
+
+    <div class="col-12">
+    <p class="lead text-center d-block m-auto ">Betting Table</p>
+    </div>
+    
+    
+    
+    <input type="text" placeholder="" id="search" class="form-control mt-4 mb-2   w-75  d-inline">
+    <i title="clear search" id="clearInput" class=" fa fa-times"></i>
+    <select title="search by" class="form-control mt-4 mb-2  w-25 d-inline" name="exampleSelect1" id="exampleSelect1">
+      
+
+    </select>
+    
+    
+
+    
+<table  class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" target="amount">Amount <i title="sort " toggle="false"></i></th>
+      <th scope="col" target="date">Date <i title="sort " toggle="false"></i></th>
+      <th scope="col" target="wager">Wager <i title="sort " toggle="false"></i></i></th>
+      <th scope="col" target="notes">Notes <i title="sort " toggle="false"></i></th>
+    </tr>
+  </thead>
+  <tbody id="results">
+   
+  </tbody>
+  
+</table>
+  </div>
+</div>
               
+
              
 
               
@@ -101,14 +145,6 @@
               <div class="card-body">
                 <h4 class="card-title">Other stories</h4>
 
-                <a href="some-bets.html">
-                  <h4 class="h6">2019 NFL Bets</h4>
-                  <img class="card-img" src="img/arms.jpg" alt="" />
-                </a>
-                <time class="timeago" datetime="2019-8-13 09:00">13 August 2019</time>
-                  </ul>
-
-
                 <a href="some-pics.html" class="d-inline-block">
                   <h4 class="h6">Some fun pics.</h4>
                   <img class="card-img" src="img/BrownBear.jpg" alt="" />
@@ -120,34 +156,16 @@
                   <img class="card-img" src="img/3.png" alt="" />
                 </a>
                 <time class="timeago" datetime="2018-07-15 20:00">15 July 2018</time>
-
                 
+                <a href="bread.html" class="d-inline-block">
+                  <h4 class="h6">I made some bread</h4>
+                  <img class="card-img" src="img/1.JPG" alt="" />
+                </a>
+                <time class="timeago" datetime="2018-07-15 20:00">15 July 2018</time>
 
               
           </aside>
-          <!-- 
-          <aside class="sidebar sidebar-sticky">
-            
-            <div class="card mb-4">
-              <div class="card-body">
-                <h4 class="card-title">Other stories</h4>
 
-                <a href="post-image.html" class="d-inline-block">
-                  <h4 class="h6">The blind man</h4>
-                  <img class="card-img" src="img/2.jpg" alt="" />
-                </a>
-                <time class="timeago" datetime="2017-10-03 20:00">3 october 2017</time> in Lifestyle
-
-                <a href="post-image.html" class="d-inline-block mt-3">
-                  <h4 class="h6">Crying on the news</h4>
-                  <img class="card-img" src="img/3.jpg" alt="" />
-                </a>
-                <time class="timeago" datetime="2017-07-16 20:00">16 july 2017</time> in Work
-
-              </div>
-            </div>/.card 
-          </aside>
-          -->
         </div>
       </div>
     </div>
@@ -168,6 +186,7 @@
   </footer>
 
   <script src="../js/bundle.js"></script>
+  <script  src="../js/tablescript.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123828557-1"></script>
 <script>

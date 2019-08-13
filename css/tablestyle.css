@@ -1,0 +1,11 @@
+.toggleSort {cursor: pointer;}
+#clearInput {
+  position:absolute;
+  float:right;
+  top: 65px;
+  right: 33%;
+  color: red;
+  clear: both;
+  cursor: pointer;
+}
+
