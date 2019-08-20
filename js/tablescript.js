@@ -16,9 +16,11 @@ const clearInput = document.getElementById('clearInput');
 
 
 const people = [
-{ amount: '$120 to win $70.58', date: '8/11/19', wager: 'Panthers over 7.5 wins', notes: 'Number seems low. There will be plenty of time to hedge if all goes to crap.' },
-{ amount: '$12.36 to win $7.97', date: '9/8/19', wager: 'Rams over Panthers', notes: 'First hedge on Panthers bet. If Panthers win, I will be happy.' },
-{ amount: '$15 to win $5', date: '9/9/19', wager: 'Saints over Texans', notes: 'Seems like a simple bet.' }];
+{ date: '8/11/19', bet: '$120', towin: '$70.58',  result: ' ', description: 'Panthers over 7.5 wins'},
+{ date: '8/17/19', bet: '$5.13', towin: '$6.41',  result: '$6.41', description: 'Browns to win @ Colts'},
+{ date: '8/19/19', bet: '$10', towin: '$9.52',  result: '$9.52', description: '49ers to win @ Broncos'},
+{ date: '9/8/19', bet: '$12.36', towin: '$7.97',  result: ' ', description: 'Rams to win @ Panthers'},
+{ date: '9/9/19', bet: '$15', towin: '$5',  result: ' ', description: 'Saints over Texans'}];
 
 
 
@@ -105,7 +107,7 @@ if (InputVal.addEventListener) {
   t.map((str, count) => {
     count = count + 1;
     // if(count % 2 == 0) {//is even using js template literal
-    results.insertAdjacentHTML('beforeend', '<tr class="' + `${count % 2 == 0 ? "" : "bg-light"}` + ' "><th scope="row">' + str.amount + '</th><td>' + str.date + '</td><td>' + str.wager + '</td><td>' + str.notes + '</td><tr>');
+    results.insertAdjacentHTML('beforeend', '<tr class="' + `${count % 2 == 0 ? "" : "bg-light"}` + ' "><th scope="row">' + str.date + '</th><td>' + str.bet + '</td><td>' + str.towin + '</td><td>' + str.result + '</td><td>' + str.description + '</td><tr>');
     //} else {
     //  results.insertAdjacentHTML('beforeend', '<tr><th scope="row">' + count +'</th><td>' +  str.name + '</td><td>' + str.job + '</td><td>' + str.age + '</td><tr>');
     //   }
