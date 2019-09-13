@@ -24,17 +24,17 @@ const people = [
 { date: '9/5/19', bet: '$5', towin: '$4.35',  result: '$4.35', description: 'Packers @ Bears under 46.5'},
 { date: '9/5/19', bet: '$10', towin: '$10',  result: '$10', description: 'Packers +3 to win @ Bears'},
 { date: '9/8/19', bet: '$12.36', towin: '$7.97',  result: '$7.97', description: 'Rams to win @ Panthers'},
-{ date: '9/8/19', bet: '$60', towin: '$13.95',  result: '$13.95', description: 'Eagles over Washington'},
-{ date: '9/8/19', bet: '$40', towin: '$13.33',  result: '$13.33', description: 'Chargers over Colts'},
-{ date: '9/8/19', bet: '$30', towin: '$8.96',  result: '$8.96', description: 'Seahawks over Bengals'},
+{ date: '9/8/19', bet: '$60', towin: '$13.95',  result: '$13.95', description: '@ Eagles to beat Washington'},
+{ date: '9/8/19', bet: '$40', towin: '$13.33',  result: '$13.33', description: '@ Chargers to beat Colts'},
+{ date: '9/8/19', bet: '$30', towin: '$8.96',  result: '$8.96', description: '@ Seahawks to beat Bengals'},
 { date: '9/8/19', bet: '$11', towin: '$10',  result: '-$11', description: 'Rams @ Panthers Under 49.5'},
-{ date: '9/8/19', bet: '$10', towin: '$2',  result: '$2', description: 'In Game Bet: Patriots over Steelers'},
+{ date: '9/8/19', bet: '$10', towin: '$2',  result: '$2', description: 'In Game Bet: Patriots to win @ Steelers'},
 { date: '9/8/19', bet: '$5', towin: '$4.35',  result: '$4.35', description: 'Broncos @ Raiders Under 43'},
-{ date: '9/9/19', bet: '$15', towin: '$5',  result: '$5', description: 'Saints over Texans'},
+{ date: '9/9/19', bet: '$15', towin: '$5',  result: '$5', description: '@ Saints to beat Texans'},
 { date: '9/11/19', bet: '$10', towin: '$9.52',  result: '-$10', description: 'Bucs @ Panthers Over 49.5'},
-{ date: '9/11/19', bet: '$10', towin: '$15',  result: '', description: 'Colts over Titans'},
+{ date: '9/11/19', bet: '$10', towin: '$15',  result: '', description: 'Colts to win @ Titans'},
 { date: '9/11/19', bet: '$20', towin: '$18.18',  result: '', description: 'Patriots -19 @ Dolphins'},
-{ date: '9/11/19', bet: '$10.89', towin: '$28.31',  result: '$28.31', description: 'Patriots -19 @ Dolphins'}];
+{ date: '9/12/19', bet: '$10.89', towin: '$28.31',  result: '$28.31', description: 'In Game Bet: Bucs to win @ Panthers'}];
 
 
 
