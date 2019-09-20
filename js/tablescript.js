@@ -41,7 +41,11 @@ const people = [
 { date: '9/15/19', bet: '$40', towin: '$13.77',  result: '$13.77', description: 'Chiefs to win @ Raiders'},
 { date: '9/16/19', bet: '$100', towin: '$33.20',  result: '$33.20', description: 'Browns to win @ Jets'},
 { date: '9/16/19', bet: '$10', towin: '$7.69',  result: '-$10', description: 'Titans to win @ Jaguars'},
-{ date: '9/16/19', bet: '$5', towin: '$4.76',  result: '-$5', description: 'Titans @ Jaguars over 40'}];
+{ date: '9/16/19', bet: '$5', towin: '$4.76',  result: '-$5', description: 'Titans @ Jaguars over 40'},
+{ date: '9/16/19', bet: '$5', towin: '$13.22',  result: '', description: 'Two-Team Parlay: Patriots -22.5, Cowboys -23'},
+{ date: '9/16/19', bet: '$10', towin: '$8.70',  result: '', description: 'Colts over @ Falcons'},
+{ date: '9/16/19', bet: '$50', towin: '$20',  result: '', description: '@ Chiefs to beat Ravens'},
+{ date: '9/16/19', bet: '$10', towin: '$11.50',  result: '', description: 'Panthers to win @ Cardinals'}];
 
 
 
