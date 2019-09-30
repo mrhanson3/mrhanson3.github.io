@@ -49,17 +49,18 @@ const people = [
 { date: '9/22/19', bet: '$100', towin: '$21.74',  result: '$21.74', description: '@ Vikings to beat Raiders'},
 { date: '9/23/19', bet: '$20', towin: '$8',  result: '$8', description: 'Bears to win @ Washington'},
 { date: '9/23/19', bet: '$10', towin: '$9.52',  result: '$9.52', description: 'Bears @ Washington over 41'},
-{ date: '9/23/19', bet: '$50', towin: '$15.63',  result: '', description: 'Patriots over @ Bills'},
-{ date: '9/23/19', bet: '$20', towin: '$20',  result: '', description: 'Patriots -7.5 over @ Bills'},
-{ date: '9/23/19', bet: '$10', towin: '$4.55',  result: '', description: 'Seahawks over @ Cardinals'},
-{ date: '9/23/19', bet: '$20', towin: '$7.41',  result: '', description: 'Chiefs over @ Lions'},
-{ date: '9/23/19', bet: '$10', towin: '$3.45',  result: '', description: '@ Colts to beat Raiders'},
+{ date: '9/23/19', bet: '$50', towin: '$15.63',  result: '$15.63', description: 'Patriots over @ Bills'},
+{ date: '9/23/19', bet: '$20', towin: '$20',  result: '-$20', description: 'Patriots -7.5 over @ Bills'},
+{ date: '9/23/19', bet: '$10', towin: '$4.55',  result: '$4.55', description: 'Seahawks over @ Cardinals'},
+{ date: '9/23/19', bet: '$20', towin: '$7.41',  result: '$7.41', description: 'Chiefs over @ Lions'},
+{ date: '9/23/19', bet: '$10', towin: '$3.45',  result: '-$10', description: '@ Colts to beat Raiders'},
 { date: '9/23/19', bet: '$30', towin: '$48',  result: '', description: 'Patriots to win the AFC'},
 { date: '9/23/19', bet: '$30', towin: '$82.50',  result: '', description: 'Chiefs to win the AFC'},
 { date: '9/23/19', bet: '$20', towin: '$66.60',  result: '', description: 'Patriots to win the Super Bowl'},
 { date: '9/26/19', bet: '$10', towin: '$9.52',  result: '-$10', description: 'Eagles @ Packers over 47'},
-{ date: '9/26/19', bet: '$20', towin: '$15.38',  result: '-$20', description: '@ Packers -3.5 over Eagles'}];
-
+{ date: '9/26/19', bet: '$20', towin: '$15.38',  result: '-$20', description: '@ Packers -3.5 over Eagles'},
+{ date: '9/29/19', bet: '$10', towin: '$8',  result: '$8', description: 'Patriots @ Bills under 40.5'},
+{ date: '9/29/19', bet: '$10', towin: '$8.33',  result: '$8.33', description: 'Vikings @ Bears under 38.5'}];
 
 
 /*========================================================
