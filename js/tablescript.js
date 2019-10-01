@@ -60,7 +60,11 @@ const people = [
 { date: '9/26/19', bet: '$10', towin: '$9.52',  result: '-$10', description: 'Eagles @ Packers over 47'},
 { date: '9/26/19', bet: '$20', towin: '$15.38',  result: '-$20', description: '@ Packers -3.5 over Eagles'},
 { date: '9/29/19', bet: '$10', towin: '$8',  result: '$8', description: 'Patriots @ Bills under 40.5'},
-{ date: '9/29/19', bet: '$10', towin: '$8.33',  result: '$8.33', description: 'Vikings @ Bears under 38.5'}];
+{ date: '9/29/19', bet: '$10', towin: '$8.33',  result: '$8.33', description: 'Vikings @ Bears under 38.5'},
+{ date: '9/29/19', bet: '$13.92', towin: '$16.01',  result: '$', description: 'Rams over @ Seahawks'},
+{ date: '9/29/19', bet: '$7', towin: '$6.36',  result: '$', description: 'Bears @ Raiders Under 41'},
+{ date: '9/29/19', bet: '$13.96', towin: '$5.91',  result: '$', description: 'Bears over @ Raiders'},
+{ date: '9/29/19', bet: '$10', towin: '$2.22',  result: '$', description: 'Two Team Parlay: Patriots over Washington and @ Eagles over Jets'}];
 
 
 /*========================================================
