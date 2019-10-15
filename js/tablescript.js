@@ -70,8 +70,12 @@ const people = [
 { date: '9/29/19', bet: '$20', towin: '$16.67',  result: '$-20', description: '@ Chiefs -10.5 over Colts'},
 { date: '10/7/19', bet: '$12.03', towin: '$8.59',  result: '$8.59', description: 'Browns @ 49ers under 49.5'},
 { date: '10/7/19', bet: '$20', towin: '$17.39',  result: '-$20', description: 'Browns +4.5 over @ 49ers'},
-{ date: '10/8/19', bet: '$39.04', towin: '$3.25',  result: '', description: '@ Patriots over Giants'},
-{ date: '10/8/19', bet: '$30', towin: '$2.50',  result: '', description: '@ Patriots over Giants'}];
+{ date: '10/8/19', bet: '$39.04', towin: '$3.25',  result: '$3.25', description: '@ Patriots over Giants'},
+{ date: '10/8/19', bet: '$30', towin: '$2.50',  result: '$2.50', description: '@ Patriots over Giants'},
+{ date: '10/13/19', bet: '$110', towin: '$31.42',  result: '-$110', description: 'Cowboys over @ Jets'},
+{ date: '10/13/19', bet: '$120', towin: '$30',  result: '$30', description: '@ Jets over Cowboys'},
+{ date: '10/14/19', bet: '$107.28', towin: '$56.46',  result: '$56.46', description: '@ Packers over Lions'},
+{ date: '10/15/19', bet: '$20', towin: '$10.53',  result: '', description: '@ Chiefs over Broncos'}];
 
 
 /*========================================================
