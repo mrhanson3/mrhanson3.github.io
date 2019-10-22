@@ -66,7 +66,7 @@ const people = [
 { date: '9/29/19', bet: '$13.96', towin: '$5.91',  result: '-$13.96', description: 'Bears over @ Raiders'},
 { date: '9/29/19', bet: '$10', towin: '$2.22',  result: '$2.22', description: 'Two Team Parlay: Patriots over Washington and @ Eagles over Jets'},
 { date: '9/29/19', bet: '$100', towin: '$9.09',  result: '$9.09', description: 'Patriots over @ Washington'},
-{ date: '9/29/19', bet: '$10', towin: '$6.25',  result: '$6.25', description: '@ Panthers over @ Jaguars'},
+{ date: '9/29/19', bet: '$10', towin: '$6.25',  result: '$6.25', description: '@ Panthers over Jaguars'},
 { date: '9/29/19', bet: '$20', towin: '$16.67',  result: '$-20', description: '@ Chiefs -10.5 over Colts'},
 { date: '10/7/19', bet: '$12.03', towin: '$8.59',  result: '$8.59', description: 'Browns @ 49ers under 49.5'},
 { date: '10/7/19', bet: '$20', towin: '$17.39',  result: '-$20', description: 'Browns +4.5 over @ 49ers'},
@@ -83,7 +83,7 @@ const people = [
 { date: '10/18/19', bet: '$20', towin: '$4.55',  result: '$4.55', description: '49ers to win @ Washington'},
 { date: '10/18/19', bet: '$10', towin: '$12.50',  result: '-$10', description: 'Chargers to win @ Titans'},  
 { date: '10/18/19', bet: '$5', towin: '$3.33',  result: '$3.33', description: 'Rams to win @ Falcons'},
-{ date: '10/18/19', bet: '$56.99', towin: '$11.88',  result: '', description: 'Patriots to win @ Jets'}];
+{ date: '10/18/19', bet: '$56.99', towin: '$11.88',  result: '$11.88', description: 'Patriots to win @ Jets'}];
 
 
 
