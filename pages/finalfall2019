@@ -1,0 +1,110 @@
+       <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Clayton's Number Guessing Game</title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="css/style.css">
+          
+      </head>
+      <body style="text-align: center; background: lightgrey;">
+        <br>
+
+     <div class="container">
+        <div class="row">
+        <div class="col-3"></div>
+          <div class="col-6">      
+            <div class="form">
+                <label for="guessField">Guess a number between 1 and 50: </label>
+                <p>You have 5 tries. Go!</p>
+                <br>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" value="Submit" class="guessSubmit">
+            </div>
+           <div class="resultsDisplay">
+              <p class="lastResult"></p> 
+              <p class="hint"></p>
+              <p class="guesses"></p>
+              <p class="resetButton"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="col-3"></div>
+</div>
+
+
+
+     </div> 
+    </body>
+    <script>
+      
+      var secretNumber = Math.floor(Math.random() * 50) + 1;
+      var guesses = document.querySelector('.guesses');
+      var lastResult = document.querySelector('.lastResult');
+      var hint = document.querySelector('.hint');
+      var guessSubmit = document.querySelector('.guessSubmit');
+      var guessField = document.querySelector('.guessField');
+      var guessCount = 1;
+      var resetButton;
+      guessField.focus();
+      function checkGuess() {
+        var userGuess = Number(guessField.value);
+        if(guessCount === 1) {
+          guesses.textContent = 'Previous guesses: ';
+        }
+        guesses.textContent += userGuess + ' ';
+        if(userGuess === secretNumber) {
+          lastResult.textContent = 'Congrats on the lucky guess! Try again!';
+          lastResult.style.color = 'green';
+          hint.textContent = '';
+          setGameOver();
+        } else if(guessCount === 5) {
+          lastResult.textContent = 'Game over. The number you were looking for was ' + secretNumber + '.';
+          lastResult.style.color = 'red';
+          hint.textContent = '';
+          setGameOver();
+        } else if (guessCount === 4) {
+          lastResult.textContent = 'Wrong! You have one more guess!';
+          lastResult.style.color = 'orange';
+        } else if(userGuess > 50 || userGuess < 1) {
+            hint.textContent = 'The game is guess between 1 - 50. Focus.';
+        } else {
+          lastResult.textContent = 'Wrong!';
+          lastResult.style.color = 'red';
+          if(userGuess < secretNumber) {
+            hint.textContent = 'Too low, try again!';
+          } else if(userGuess > secretNumber) {
+            hint.textContent = 'Too high, try again!';
+          } 
+        }
+        guessCount++;
+        guessField.value = '';
+        guessField.focus(); //focus emphasizes the input part of the button, not needed but user-helpful
+      }
+      guessSubmit.addEventListener('click', checkGuess); //After the click, it runs the checkGuess function
+      function setGameOver() {
+        guessField.disabled = true;
+        guessSubmit.disabled = true;
+        resetButton = document.createElement('button');
+        resetButton.textContent = 'Start new game';
+        document.body.appendChild(resetButton);
+        resetButton.addEventListener('click', resetGame);
+      }
+      function resetGame() {
+        guessCount = 1;
+        var reset = $(".resultsDisplay p");
+        for(var i = 0 ; i < reset.length ; i++) {
+          reset[i].textContent = '';
+        }
+        resetButton.parentNode.removeChild(resetButton); //Hides the reset button when the game restarts
+        guessField.disabled = false;
+        guessSubmit.disabled = false;
+        guessField.value = '';
+        guessField.focus();
+        lastResult.style.color = 'white';
+        secretNumber = Math.floor(Math.random() * 50) + 1;
+      }
+    </script>
+     
