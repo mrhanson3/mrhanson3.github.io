@@ -28,7 +28,8 @@ const people = [
 { date: '12/11/19', bet: '$30', towin: '$66',  result: '', description: 'Ravens to win the Super Bowl'},
 { date: '12/10/19', bet: '$63.28', towin: '$24.34',  result: '', description: 'Seahawks to win @ Panthers'},
 { date: '12/10/19', bet: '$10', towin: '$8.70',  result: '', description: 'Seahawks -6 to win @ Panthers'},  
-{ date: '12/10/19', bet: '$20', towin: '$7.69',  result: '', description: 'Seahawks to win @ Panthers'}]  
+{ date: '12/10/19', bet: '$20', towin: '$7.69',  result: '', description: 'Seahawks to win @ Panthers'},
+{ date: '12/10/19', bet: '$50', towin: '$10',  result: '', description: 'Patriots to win @ Bengals'}] 
 
 
 
