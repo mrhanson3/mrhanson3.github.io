@@ -16,7 +16,6 @@ const clearInput = document.getElementById('clearInput');
 
 
 const people = [
-{ date: '8/11/19', bet: '$120', towin: '$70.58',  result: ' ', description: 'Panthers over 7.5 wins'},
 { date: '8/16/19', bet: '$10', towin: '$10.50',  result: ' ', description: 'Colts under 6.5 wins'},
 { date: '9/23/19', bet: '$30', towin: '$48',  result: '', description: 'Patriots to win the AFC'},
 { date: '9/23/19', bet: '$25', towin: '$5',  result: '', description: 'Patriots to win the AFC East'},
@@ -25,11 +24,7 @@ const people = [
 { date: '10/29/19', bet: '$12', towin: '$30',  result: '', description: 'Saints to win the NFC'},
 { date: '11/7/19', bet: '$20', towin: '$130',  result: '', description: 'Saints to win the Super Bowl'},
 { date: '11/7/19', bet: '$20', towin: '$140',  result: '', description: 'Ravens to win the Super Bowl'},
-{ date: '12/11/19', bet: '$30', towin: '$66',  result: '', description: 'Ravens to win the Super Bowl'},
-{ date: '12/10/19', bet: '$63.28', towin: '$24.34',  result: '', description: 'Seahawks to win @ Panthers'},
-{ date: '12/10/19', bet: '$10', towin: '$8.70',  result: '', description: 'Seahawks -6 to win @ Panthers'},  
-{ date: '12/10/19', bet: '$20', towin: '$7.69',  result: '', description: 'Seahawks to win @ Panthers'},
-{ date: '12/13/19', bet: '$50', towin: '$10',  result: '', description: 'Patriots to win @ Bengals'}] 
+{ date: '12/11/19', bet: '$30', towin: '$66',  result: '', description: 'Ravens to win the Super Bowl'}]
 
 
 
