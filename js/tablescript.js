@@ -18,7 +18,6 @@ const clearInput = document.getElementById('clearInput');
 const people = [
 { date: '8/16/19', bet: '$10', towin: '$10.50',  result: ' ', description: 'Colts under 6.5 wins'},
 { date: '9/23/19', bet: '$30', towin: '$48',  result: '', description: 'Patriots to win the AFC'},
-{ date: '9/23/19', bet: '$25', towin: '$5',  result: '', description: 'Patriots to win the AFC East'},
 { date: '9/23/19', bet: '$30', towin: '$82.50',  result: '', description: 'Chiefs to win the AFC'},
 { date: '9/23/19', bet: '$20', towin: '$66.60',  result: '', description: 'Patriots to win the Super Bowl'},
 { date: '10/29/19', bet: '$12', towin: '$30',  result: '', description: 'Saints to win the NFC'},
