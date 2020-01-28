@@ -16,8 +16,11 @@ const clearInput = document.getElementById('clearInput');
 
 
 const people = [
-{ date: '9/23/19', bet: '$30', towin: '$82.50',  result: '', description: 'Chiefs to win the AFC'},
-{ date: '12/11/19', bet: '$20', towin: '$13.79',  result: '', description: 'AFC to win the Super Bowl'}]
+{ date: '12/11/19', bet: '$20', towin: '$13.79',  result: '', description: 'AFC to win the Super Bowl'},
+{ date: '1/20/20', bet: '$30', towin: '$34.50',  result: '', description: 'Mahomes Super Bowl MVP'},
+{ date: '1/24/20', bet: '$20', towin: '$18.18',  result: '', description: 'Super Bowl over 54.5 points'},
+{ date: '1/27/20', bet: '$10', towin: '$140',  result: '', description: 'Kelce Super Bowl MVP'},
+{ date: '1/27/20', bet: '$10', towin: '$140',  result: '', description: 'Kittle Super Bowl MVP'}]
 
 
 
