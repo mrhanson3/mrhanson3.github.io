@@ -192,12 +192,12 @@ a {
   }
 }
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   margin: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.5, #000), color-stop(1, transparent));
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.025, #000), color-stop(0, transparent));
   -webkit-transition: background-position 1s, background-color 1s;
   transition: background-position 1s, background-color 1s;
   text-align: center;
@@ -205,7 +205,7 @@ h1 {
   font-weight: 400;
   line-height: 1;
   background-image: url("https://mrhanson3.github.io/img/about/33.JPG");
-  background-size: 120%;
+  background-size: 130%;
   background-repeat: repeat-x;
   background-position: 0px 15%, 200px 25%, -50px 2vw;
 }
