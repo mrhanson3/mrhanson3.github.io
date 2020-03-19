@@ -1,0 +1,276 @@
+:root {
+  --darkest-blue: #465579;
+  --grey: #D3DAE1;
+  --turquoise: #327698;
+  --border-width: .75rem;
+  --dots-gap: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Trocchi, Georgia, serif;
+  line-height: 1.5;
+  color: var(--grey);
+}
+
+a {
+  color: inherit;
+}
+
+.bg {
+  background: inherit;
+  min-height: 100vh;
+  padding: 25vh 0 1.5rem;
+  -webkit-transition: background 0s 1s, color .6s;
+  transition: background 0s 1s, color .6s;
+}
+
+.projects {
+  color: var(--darkest-blue);
+}
+
+.bg:after {
+  content: "";
+  border: var(--border-width) solid;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 12;
+  pointer-events: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.bio,
+.link-bio {
+  background: var(--darkest-blue);
+}
+
+.bio h1 {
+  background-color: var(--turquoise);
+}
+
+.projects,
+.link-projects {
+  background: var(--grey);
+}
+
+.find-me,
+.link-find-me {
+  background: var(--turquoise);
+}
+
+.transition {
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.transition-bio {
+  left: 0;
+  background: var(--darkest-blue);
+}
+
+.transition-projects {
+  left: 7.5rem;
+  background: var(--grey);
+}
+
+.transition-find-me {
+  left: 15rem;
+  background: var(--turquoise);
+}
+
+.bio .transition-bio,
+.projects .transition-projects,
+.find-me .transition-find-me {
+  opacity: 1;
+}
+
+.bio .transition-bio {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.projects .transition-projects {
+  -webkit-transform: scale(1) translateX(-7.5rem);
+          transform: scale(1) translateX(-7.5rem);
+}
+
+.find-me .transition-find-me {
+  -webkit-transform: scale(1) translateX(-15rem);
+          transform: scale(1) translateX(-15rem);
+}
+
+.dots:before,
+.dots:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  opacity: .5;
+  z-index: 11;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--turquoise)), color-stop(0, transparent));
+  background-image: linear-gradient(var(--turquoise) 20%, transparent 0);
+  background-size: 100% var(--dots-gap);
+  background-position: 0 0;
+  -webkit-animation: movebg .2s linear infinite;
+          animation: movebg .2s linear infinite;
+  will-change: transform;
+  width: 2px;
+}
+
+.dots1:before {
+  left: 5%;
+}
+
+.dots1:after {
+  left: 15%;
+}
+
+.dots2:before {
+  right: 75%;
+}
+
+.dots2:after {
+  right: 5%;
+}
+
+.dots:after {
+  animation-direction: reverse;
+}
+
+.projects .dots:before,
+.projects .dots:after {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--darkest-blue)), color-stop(0, transparent));
+  background-image: linear-gradient(var(--darkest-blue) 20%, transparent 0);
+}
+
+.find-me .dots:before,
+.find-me .dots:after {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--grey)), color-stop(0, transparent));
+  background-image: linear-gradient(var(--grey) 20%, transparent 0);
+}
+
+@-webkit-keyframes movebg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, var(--dots-gap), 0);
+            transform: translate3d(0, var(--dots-gap), 0);
+  }
+}
+
+@keyframes movebg {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, var(--dots-gap), 0);
+            transform: translate3d(0, var(--dots-gap), 0);
+  }
+}
+h1 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(0.5, #000), color-stop(1, transparent));
+  -webkit-transition: background-position 1s, background-color 1s;
+  transition: background-position 1s, background-color 1s;
+  text-align: center;
+  font-size: calc(28vw + 1rem);
+  font-weight: 400;
+  line-height: 1;
+  background-image: url("https://mrhanson3.github.io/img/about/33.JPG");
+  background-size: 120%;
+  background-repeat: repeat-x;
+  background-position: 0px 15%, 200px 25%, -50px 2vw;
+}
+
+.projects h1 {
+  background-color: var(--turquoise);
+  background-position: -120px 15%, 230px 20%, -100px 3vw;
+}
+
+.find-me h1 {
+  background-color: var(--grey);
+  background-position: -240px 15%, 260px 25%, -150px 1vw;
+}
+
+nav {
+  position: fixed;
+  top: var(--border-width);
+  left: var(--border-width);
+  z-index: 10;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  -webkit-box-flex: 1;
+          flex: 1 0 7.5rem;
+}
+nav a {
+  display: block;
+  padding: .75rem 0 .5rem;
+  color: var(--grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .875rem;
+}
+nav .link-projects {
+  color: var(--darkest-blue);
+}
+
+main {
+  position: relative;
+  max-width: 36rem;
+  padding: 0 1.5rem;
+  margin: -3rem auto 0;
+  font-size: 2rem;
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+}
