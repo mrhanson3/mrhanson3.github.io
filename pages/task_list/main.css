@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 770px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid blue;
+}
+
+li:hover span {
+  width: 50px;
+  opacity: 1;
+}
+
+.completed {
+  color: red;
+  text-decoration: line-through;
+}
+
+h1 {
+  font-size: 170%;
+  margin-bottom: 0.4em;
+}
+h2 {
+  font-size: 140%;
+  padding: 0.25em 0 0.25em 0;
+  margin-bottom: 0.5em;
+}
+p {
+  padding-bottom: 0.25em;
+  padding-left: 25px;
+}
+aside {
+  float: left;
+  width: 375px;
+}
+
+aside label {
+  float: left;
+  width: 3em;
+}
+aside input {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+#task {
+  width: 250px;
+}
+main {
+  float: left;
+  width: 370px;
+  padding-left: 25px;
+}
+main ul {
+  list-style-type: none;
+  /*	margin-left: -1.8em;*/
+}
+main input {
+  margin-bottom: 0.5em;
+}
+main p {
+  float: right;
+  width: 250px;
+  padding-top: 0.2em;
+  padding-left: 1em;
+}
+aside #add,
+main input {
+  padding: 0.2em;
+}
+footer {
+  clear: both;
+}

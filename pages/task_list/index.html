@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/todo.css" />
+  </head>
+
+  <body>
+    <aside>
+      <h2>Add a task</h2>
+      <label for="task">Task:</label>
+      <input type="text" id="task" name="task" /><br />
+      <label>&nbsp;</label>
+      <input
+        type="button"
+        id="add"
+        name="add"
+        value="Add Task"
+        <i
+        class="fa fa-plus"
+      />
+    </aside>
+    <main>
+      <h1>Task list</h1>
+      <ul>
+        <li>
+          <span><i class="fa fa-trash"></i> </span>Wash car
+        </li>
+        <li>
+          <span><i class="fa fa-trash"></i> </span>Fertilize lawn
+        </li>
+        <li>
+          <span><i class="fa fa-trash"></i> </span>Clean out refrigerator
+        </li>
+      </ul>
+    </main>
+
+    <footer>Click on a completed task to cross it out.</footer>
+  </body>
+  <script src="tasks.js"></script>
+</html>
