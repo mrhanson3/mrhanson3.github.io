@@ -12,7 +12,34 @@
         height: 1.5em;
       }
     </style>
-    <!-- jQuery calls to the button() and sortable methods. -->
+    
+  </head>
+
+  <body>
+    <main>
+      <h2>Task List by Employee</h2>
+      <div id="left">
+        <h3>Kelly</h3>
+        <ul id="employee1" class="connectedSortable">
+          <li class="ui-state-default sortable">
+            <p>Manage office personnel</p>
+          </li>
+          <li class="ui-state-default sortable"><p>Process payables</p></li>
+          <li class="ui-state-default sortable"><p>Process payroll</p></li>
+        </ul>
+        <input type="button" id="add1" value="Add Task" />
+      </div>
+      <div id="right">
+        <h3>Juliette</h3>
+        <ul id="employee2" class="connectedSortable">
+          <li class="ui-state-default sortable"><p>Enter orders</p></li>
+          <li class="ui-state-default sortable"><p>Process invoices</p></li>
+        </ul>
+        <input type="button" id="add2" value="Add Task" />
+      </div>
+    </main>
+  </body>
+  <!-- jQuery calls to the button() and sortable methods. -->
     <script>
       $(document).ready(function () {
         $("#submitbutton").button();
@@ -43,30 +70,4 @@
         });
       });
     </script>
-  </head>
-
-  <body>
-    <main>
-      <h2>Task List by Employee</h2>
-      <div id="left">
-        <h3>Kelly</h3>
-        <ul id="employee1" class="connectedSortable">
-          <li class="ui-state-default sortable">
-            <p>Manage office personnel</p>
-          </li>
-          <li class="ui-state-default sortable"><p>Process payables</p></li>
-          <li class="ui-state-default sortable"><p>Process payroll</p></li>
-        </ul>
-        <input type="button" id="add1" value="Add Task" />
-      </div>
-      <div id="right">
-        <h3>Juliette</h3>
-        <ul id="employee2" class="connectedSortable">
-          <li class="ui-state-default sortable"><p>Enter orders</p></li>
-          <li class="ui-state-default sortable"><p>Process invoices</p></li>
-        </ul>
-        <input type="button" id="add2" value="Add Task" />
-      </div>
-    </main>
-  </body>
 </html>
