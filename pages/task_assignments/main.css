@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 550px;
+	margin: 0 auto;
+	padding: 15px 25px;	
+}
+h2 { 
+	font-size: 125%;
+	margin-bottom: .5em;
+}
+h3 {
+	font-size: 110%;
+	margin-bottom: .5em;
+}
+#left {
+	width: 225px;
+	float: left;
+}
+#right {
+	width: 225px;
+	margin-left: 50px;
+	float: right;	
+}
+#employee1, #employee2 {
+	list-style-type: none;
+	height: 250px;
+	border: 1px solid blue;
+}
+p {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.ui-selected {
+	color: blue;
+
+}
+input {
+	margin-top: 10px;
+}
