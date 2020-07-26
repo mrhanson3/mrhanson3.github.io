@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flickr</title>
+    <link href="main.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var url =
+          "http://api.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&format=json&jsoncallback=?&tags=vectacorpbuilding";
+        $.getJSON(url, function (data) {
+          var html = "";
+          $.each(data.items, function (i, item) {
+            html += "<a><img src=" + item.media.m + "></a>";
+            html += "";
+          });
+          $("#new_building").html(html);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <section>
+      <header></header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>About Us</h2>
+        <p>
+          On June 6th, 2012, Vecta Corp. moved into its new 4 story, 35,000
+          square foot facilty. Below are a few pictures of the new facility.
+        </p>
+        <div id="new_building"></div>
+      </main>
+
+      <footer></footer>
+      <script src="js/lightbox.min.js"></script>
+    </section>
+  </body>
+</html>
